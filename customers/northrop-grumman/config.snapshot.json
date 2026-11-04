@@ -1,0 +1,311 @@
+{
+  "clientId": "ng_subtier_demo",
+  "admin": {
+    "enabled": false
+  },
+  "env": {
+    "REACT_APP_SUPPLY_CHAIN_CLIENT": "ng_subtier_demo"
+  },
+  "dataModels": {
+    "hierarchical": {
+      "file": "src/ng-subtier_demo.ts",
+      "dataSourceTitle": "NG_SUBTIER_DEMO",
+      "dimension": "BOM_RISK_TIERS",
+      "fieldRoles": {
+        "tier1SupplierName": "BOM_TIER_1.ENTITY_NAME",
+        "tier2SupplierName": "BOM_TIER_2.ENTITY_NAME",
+        "tier3SupplierName": "BOM_TIER_3.ENTITY_NAME",
+        "tier4SupplierName": "BOM_TIER_4.ENTITY_NAME",
+        "tier5SupplierName": "BOM_TIER_5.ENTITY_NAME",
+        "tier6SupplierName": "BOM_TIER_6.ENTITY_NAME",
+        "tier7SupplierName": "BOM_TIER_7.ENTITY_NAME",
+        "tier8SupplierName": "BOM_TIER_8.ENTITY_NAME",
+        "tier9SupplierName": "BOM_TIER_9.ENTITY_NAME",
+        "tier10SupplierName": "BOM_TIER_10.ENTITY_NAME",
+        "partTier1": "BOM_TIER_1.BOM_TEXT",
+        "partTier2": "BOM_TIER_2.BOM_TEXT",
+        "partTier3": "BOM_TIER_3.BOM_TEXT",
+        "partTier4": "BOM_TIER_4.BOM_TEXT",
+        "partTier5": "BOM_TIER_5.BOM_TEXT",
+        "partTier6": "BOM_TIER_6.BOM_TEXT",
+        "partTier7": "BOM_TIER_7.BOM_TEXT",
+        "partTier8": "BOM_TIER_8.BOM_TEXT",
+        "partTier9": "BOM_TIER_9.BOM_TEXT",
+        "partTier10": "BOM_TIER_10.BOM_TEXT",
+        "bomIdTier1": "BOM_TIERS_SPINE.TIER1_BOMID",
+        "bomIdTier2": "BOM_TIERS_SPINE.TIER2_BOMID",
+        "bomIdTier3": "BOM_TIERS_SPINE.TIER3_BOMID",
+        "bomIdTier4": "BOM_TIERS_SPINE.TIER4_BOMID",
+        "bomIdTier5": "BOM_TIERS_SPINE.TIER5_BOMID",
+        "bomIdTier6": "BOM_TIERS_SPINE.TIER6_BOMID",
+        "bomIdTier7": "BOM_TIERS_SPINE.TIER7_BOMID",
+        "bomIdTier8": "BOM_TIERS_SPINE.TIER8_BOMID",
+        "bomIdTier9": "BOM_TIERS_SPINE.TIER9_BOMID",
+        "bomIdTier10": "BOM_TIERS_SPINE.TIER10_BOMID",
+        "bomTextTier1": "BOM_TIERS_SPINE.TIER1_BOM_TEXT",
+        "bomTextTier2": "BOM_TIERS_SPINE.TIER2_BOM_TEXT",
+        "bomTextTier3": "BOM_TIERS_SPINE.TIER3_BOM_TEXT",
+        "bomTextTier4": "BOM_TIERS_SPINE.TIER4_BOM_TEXT",
+        "bomTextTier5": "BOM_TIERS_SPINE.TIER5_BOM_TEXT",
+        "bomTextTier6": "BOM_TIERS_SPINE.TIER6_BOM_TEXT",
+        "bomTextTier7": "BOM_TIERS_SPINE.TIER7_BOM_TEXT",
+        "bomTextTier8": "BOM_TIERS_SPINE.TIER8_BOM_TEXT",
+        "bomTextTier9": "BOM_TIERS_SPINE.TIER9_BOM_TEXT",
+        "bomTextTier10": "BOM_TIERS_SPINE.TIER10_BOM_TEXT",
+        "t1FinalRisk": "TIER1_CONFIDENCE",
+        "t2FinalRisk": "TIER2_CONFIDENCE",
+        "t3FinalRisk": "TIER3_CONFIDENCE",
+        "t4FinalRisk": "TIER4_CONFIDENCE",
+        "t5FinalRisk": "TIER5_CONFIDENCE",
+        "t6FinalRisk": "TIER6_CONFIDENCE",
+        "t7FinalRisk": "TIER7_CONFIDENCE",
+        "t8FinalRisk": "TIER8_CONFIDENCE",
+        "t9FinalRisk": "TIER9_CONFIDENCE",
+        "t10FinalRisk": "TIER10_CONFIDENCE",
+        "t1Capacity": "BOM_TIER_1.CAPACITY",
+        "t2Capacity": "BOM_TIER_2.CAPACITY",
+        "t3Capacity": "BOM_TIER_3.CAPACITY",
+        "t4Capacity": "BOM_TIER_4.CAPACITY",
+        "t5Capacity": "BOM_TIER_5.CAPACITY",
+        "t6Capacity": "BOM_TIER_6.CAPACITY",
+        "t7Capacity": "BOM_TIER_7.CAPACITY",
+        "t8Capacity": "BOM_TIER_8.CAPACITY",
+        "t9Capacity": "BOM_TIER_9.CAPACITY",
+        "t10Capacity": "BOM_TIER_10.CAPACITY"
+      }
+    }
+  },
+  "filters": {
+    "hierarchical": {
+      "bomId": {
+        "label": "BOM ID"
+      },
+      "bomText": {
+        "label": "Part"
+      }
+    }
+  },
+  "popovers": {
+    "hierarchical": {
+      "titleField": "name",
+      "tierField": "tier",
+      "fields": [
+        {
+          "key": "supplierName",
+          "label": "Suppliers",
+          "type": "text"
+        },
+        {
+          "key": "finalRisk",
+          "label": "Risk Score",
+          "type": "risk"
+        }
+      ]
+    }
+  },
+  "risk": {
+    "metrics": [
+      {
+        "id": "finalRisk",
+        "label": "Final Risk",
+        "ogmaField": "finalRisk",
+        "defaultThreshold": 0.5
+      },
+      {
+        "id": "rcrRisk",
+        "label": "RCR Risk",
+        "ogmaField": "rcrRisk",
+        "defaultThreshold": 0.5
+      },
+      {
+        "id": "financialHealth",
+        "label": "Financial Health",
+        "ogmaField": "financialHealth",
+        "defaultThreshold": 0.5
+      },
+      {
+        "id": "esgRisk",
+        "label": "ESG Risk",
+        "ogmaField": "esgRisk",
+        "defaultThreshold": 0.5
+      }
+    ],
+    "thresholdControl": {
+      "min": 0,
+      "max": 1,
+      "step": 0.05
+    },
+    "categories": {
+      "watchlist": {
+        "enabled": false,
+        "items": []
+      },
+      "disruption": {
+        "enabled": false,
+        "items": []
+      }
+    }
+  },
+  "hierarchicalViz": {
+    "rootSupplier": "Northrop Grumman",
+    "supplierQueryMode": "prefix",
+    "expandOnClick": true,
+    "partsEnabled": true,
+    "hierarchy": {
+      "suppliers": {
+        "levels": [
+          {
+            "tier": 1,
+            "nameRole": "tier1SupplierName"
+          },
+          {
+            "tier": 2,
+            "nameRole": "tier2SupplierName"
+          },
+          {
+            "tier": 3,
+            "nameRole": "tier3SupplierName"
+          },
+          {
+            "tier": 4,
+            "nameRole": "tier4SupplierName"
+          },
+          {
+            "tier": 5,
+            "nameRole": "tier5SupplierName"
+          },
+          {
+            "tier": 6,
+            "nameRole": "tier6SupplierName"
+          },
+          {
+            "tier": 7,
+            "nameRole": "tier7SupplierName"
+          },
+          {
+            "tier": 8,
+            "nameRole": "tier8SupplierName"
+          },
+          {
+            "tier": 9,
+            "nameRole": "tier9SupplierName"
+          },
+          {
+            "tier": 10,
+            "nameRole": "tier10SupplierName"
+          }
+        ]
+      },
+      "parts": {
+        "levels": [
+          {
+            "tier": 0,
+            "nameRole": "partTier1"
+          },
+          {
+            "tier": 1,
+            "nameRole": "partTier2"
+          },
+          {
+            "tier": 2,
+            "nameRole": "partTier3"
+          },
+          {
+            "tier": 3,
+            "nameRole": "partTier4"
+          },
+          {
+            "tier": 4,
+            "nameRole": "partTier5"
+          },
+          {
+            "tier": 5,
+            "nameRole": "partTier6"
+          },
+          {
+            "tier": 6,
+            "nameRole": "partTier7"
+          },
+          {
+            "tier": 7,
+            "nameRole": "partTier8"
+          },
+          {
+            "tier": 8,
+            "nameRole": "partTier9"
+          },
+          {
+            "tier": 9,
+            "nameRole": "partTier10"
+          }
+        ]
+      }
+    },
+    "riskFieldRoles": {
+      "suppliers": {},
+      "parts": {
+        "0": {
+          "finalRisk": "t1FinalRisk",
+          "capacity": "t1Capacity"
+        },
+        "1": {
+          "finalRisk": "t2FinalRisk",
+          "capacity": "t2Capacity"
+        },
+        "2": {
+          "finalRisk": "t3FinalRisk",
+          "capacity": "t3Capacity"
+        },
+        "3": {
+          "finalRisk": "t4FinalRisk",
+          "capacity": "t4Capacity"
+        },
+        "4": {
+          "finalRisk": "t5FinalRisk",
+          "capacity": "t5Capacity"
+        },
+        "5": {
+          "finalRisk": "t6FinalRisk",
+          "capacity": "t6Capacity"
+        },
+        "6": {
+          "finalRisk": "t7FinalRisk",
+          "capacity": "t7Capacity"
+        },
+        "7": {
+          "finalRisk": "t8FinalRisk",
+          "capacity": "t8Capacity"
+        },
+        "8": {
+          "finalRisk": "t9FinalRisk",
+          "capacity": "t9Capacity"
+        },
+        "9": {
+          "finalRisk": "t10FinalRisk",
+          "capacity": "t10Capacity"
+        }
+      }
+    },
+    "analyticsDashboard": {
+      "byTier": {
+        "1": "69960f02f8dd9a761c77d1fd",
+        "2": "69967639f8dd9a761c77d42a",
+        "3": "69967ccbf8dd9a761c77d447"
+      },
+      "analyticsFilterFields": {
+        "parts": {
+          "0": "BOM_TIER_1.BOM_TEXT",
+          "1": "BOM_TIER_2.BOM_TEXT",
+          "2": "BOM_TIER_3.BOM_TEXT",
+          "3": "BOM_TIER_4.BOM_TEXT",
+          "4": "BOM_TIER_5.BOM_TEXT",
+          "5": "BOM_TIER_6.BOM_TEXT",
+          "6": "BOM_TIER_7.BOM_TEXT",
+          "7": "BOM_TIER_8.BOM_TEXT",
+          "8": "BOM_TIER_9.BOM_TEXT",
+          "9": "BOM_TIER_10.BOM_TEXT"
+        }
+      }
+    }
+  }
+}

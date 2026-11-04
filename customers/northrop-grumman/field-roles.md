@@ -1,0 +1,66 @@
+# NG field roles
+
+Every mapping below resolves against the captured generated model. Source line numbers refer to `src/ng-subtier_demo.ts`. These are schema attributes, not sample customer records.
+
+| Role | Attribute | Type | Model line |
+| --- | --- | --- | --- |
+| `tier1SupplierName` | `BOM_TIER_1.ENTITY_NAME` | `text-attribute` | 1482 |
+| `tier2SupplierName` | `BOM_TIER_2.ENTITY_NAME` | `text-attribute` | 2558 |
+| `tier3SupplierName` | `BOM_TIER_3.ENTITY_NAME` | `text-attribute` | 3096 |
+| `tier4SupplierName` | `BOM_TIER_4.ENTITY_NAME` | `text-attribute` | 3634 |
+| `tier5SupplierName` | `BOM_TIER_5.ENTITY_NAME` | `text-attribute` | 4172 |
+| `tier6SupplierName` | `BOM_TIER_6.ENTITY_NAME` | `text-attribute` | 4710 |
+| `tier7SupplierName` | `BOM_TIER_7.ENTITY_NAME` | `text-attribute` | 5248 |
+| `tier8SupplierName` | `BOM_TIER_8.ENTITY_NAME` | `text-attribute` | 5786 |
+| `tier9SupplierName` | `BOM_TIER_9.ENTITY_NAME` | `text-attribute` | 6324 |
+| `tier10SupplierName` | `BOM_TIER_10.ENTITY_NAME` | `text-attribute` | 2020 |
+| `partTier1` | `BOM_TIER_1.BOM_TEXT` | `text-attribute` | 1326 |
+| `partTier2` | `BOM_TIER_2.BOM_TEXT` | `text-attribute` | 2402 |
+| `partTier3` | `BOM_TIER_3.BOM_TEXT` | `text-attribute` | 2940 |
+| `partTier4` | `BOM_TIER_4.BOM_TEXT` | `text-attribute` | 3478 |
+| `partTier5` | `BOM_TIER_5.BOM_TEXT` | `text-attribute` | 4016 |
+| `partTier6` | `BOM_TIER_6.BOM_TEXT` | `text-attribute` | 4554 |
+| `partTier7` | `BOM_TIER_7.BOM_TEXT` | `text-attribute` | 5092 |
+| `partTier8` | `BOM_TIER_8.BOM_TEXT` | `text-attribute` | 5630 |
+| `partTier9` | `BOM_TIER_9.BOM_TEXT` | `text-attribute` | 6168 |
+| `partTier10` | `BOM_TIER_10.BOM_TEXT` | `text-attribute` | 1864 |
+| `bomIdTier1` | `BOM_TIERS_SPINE.TIER1_BOMID` | `text-attribute` | 6639 |
+| `bomIdTier2` | `BOM_TIERS_SPINE.TIER2_BOMID` | `text-attribute` | 6651 |
+| `bomIdTier3` | `BOM_TIERS_SPINE.TIER3_BOMID` | `text-attribute` | 6663 |
+| `bomIdTier4` | `BOM_TIERS_SPINE.TIER4_BOMID` | `text-attribute` | 6675 |
+| `bomIdTier5` | `BOM_TIERS_SPINE.TIER5_BOMID` | `text-attribute` | 6687 |
+| `bomIdTier6` | `BOM_TIERS_SPINE.TIER6_BOMID` | `text-attribute` | 6699 |
+| `bomIdTier7` | `BOM_TIERS_SPINE.TIER7_BOMID` | `text-attribute` | 6711 |
+| `bomIdTier8` | `BOM_TIERS_SPINE.TIER8_BOMID` | `text-attribute` | 6723 |
+| `bomIdTier9` | `BOM_TIERS_SPINE.TIER9_BOMID` | `text-attribute` | 6735 |
+| `bomIdTier10` | `BOM_TIERS_SPINE.TIER10_BOMID` | `text-attribute` | 6627 |
+| `bomTextTier1` | `BOM_TIERS_SPINE.TIER1_BOM_TEXT` | `text-attribute` | 6633 |
+| `bomTextTier2` | `BOM_TIERS_SPINE.TIER2_BOM_TEXT` | `text-attribute` | 6645 |
+| `bomTextTier3` | `BOM_TIERS_SPINE.TIER3_BOM_TEXT` | `text-attribute` | 6657 |
+| `bomTextTier4` | `BOM_TIERS_SPINE.TIER4_BOM_TEXT` | `text-attribute` | 6669 |
+| `bomTextTier5` | `BOM_TIERS_SPINE.TIER5_BOM_TEXT` | `text-attribute` | 6681 |
+| `bomTextTier6` | `BOM_TIERS_SPINE.TIER6_BOM_TEXT` | `text-attribute` | 6693 |
+| `bomTextTier7` | `BOM_TIERS_SPINE.TIER7_BOM_TEXT` | `text-attribute` | 6705 |
+| `bomTextTier8` | `BOM_TIERS_SPINE.TIER8_BOM_TEXT` | `text-attribute` | 6717 |
+| `bomTextTier9` | `BOM_TIERS_SPINE.TIER9_BOM_TEXT` | `text-attribute` | 6729 |
+| `bomTextTier10` | `BOM_TIERS_SPINE.TIER10_BOM_TEXT` | `text-attribute` | 6621 |
+| `t1FinalRisk` | `BOM_RISK_TIERS.TIER1_CONFIDENCE` | `numeric-attribute` | 320 |
+| `t2FinalRisk` | `BOM_RISK_TIERS.TIER2_CONFIDENCE` | `numeric-attribute` | 422 |
+| `t3FinalRisk` | `BOM_RISK_TIERS.TIER3_CONFIDENCE` | `numeric-attribute` | 524 |
+| `t4FinalRisk` | `BOM_RISK_TIERS.TIER4_CONFIDENCE` | `numeric-attribute` | 626 |
+| `t5FinalRisk` | `BOM_RISK_TIERS.TIER5_CONFIDENCE` | `numeric-attribute` | 728 |
+| `t6FinalRisk` | `BOM_RISK_TIERS.TIER6_CONFIDENCE` | `numeric-attribute` | 830 |
+| `t7FinalRisk` | `BOM_RISK_TIERS.TIER7_CONFIDENCE` | `numeric-attribute` | 932 |
+| `t8FinalRisk` | `BOM_RISK_TIERS.TIER8_CONFIDENCE` | `numeric-attribute` | 1034 |
+| `t9FinalRisk` | `BOM_RISK_TIERS.TIER9_CONFIDENCE` | `numeric-attribute` | 1136 |
+| `t10FinalRisk` | `BOM_RISK_TIERS.TIER10_CONFIDENCE` | `numeric-attribute` | 218 |
+| `t1Capacity` | `BOM_TIER_1.CAPACITY` | `text-attribute` | 1344 |
+| `t2Capacity` | `BOM_TIER_2.CAPACITY` | `text-attribute` | 2420 |
+| `t3Capacity` | `BOM_TIER_3.CAPACITY` | `text-attribute` | 2958 |
+| `t4Capacity` | `BOM_TIER_4.CAPACITY` | `text-attribute` | 3496 |
+| `t5Capacity` | `BOM_TIER_5.CAPACITY` | `text-attribute` | 4034 |
+| `t6Capacity` | `BOM_TIER_6.CAPACITY` | `text-attribute` | 4572 |
+| `t7Capacity` | `BOM_TIER_7.CAPACITY` | `text-attribute` | 5110 |
+| `t8Capacity` | `BOM_TIER_8.CAPACITY` | `text-attribute` | 5648 |
+| `t9Capacity` | `BOM_TIER_9.CAPACITY` | `text-attribute` | 6186 |
+| `t10Capacity` | `BOM_TIER_10.CAPACITY` | `text-attribute` | 1882 |

@@ -1,0 +1,185 @@
+{
+  "captured": "2026-11-04",
+  "source_repository": "SCRM local working tree",
+  "base_commit": "0d7735c9ac99f7320d65fd677b5eb6fa6c902af8",
+  "working_tree_dirty": true,
+  "scope": "Configuration, schema metadata and selected implementation excerpts. No row exports, credentials, dependency lockfiles or licensed Ogma binaries.",
+  "dependency_declarations": {
+    "@mui/material": "^6.5.0",
+    "@sisense/sdk-cli": "^2.16.1",
+    "@sisense/sdk-data": "^2.16.1",
+    "@sisense/sdk-ui": "^2.16.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^4.9.5",
+    "@linkurious/ogma": "5.3.6 (version from download URL; credential-bearing URL excluded)"
+  },
+  "sources": [
+    {
+      "path": "src/features/supply-chain/components/HierarchicalViz/HierarchicalViz.tsx",
+      "sha256": "8b50aa735f79423374255890501d4dad3719cb68c32839f44e8513c0cd3dd53b",
+      "excerpt": "evidence/hierarchy-builder.md",
+      "ranges": [
+        [
+          1543,
+          1560
+        ],
+        [
+          1575,
+          1615
+        ],
+        [
+          1620,
+          1875
+        ]
+      ]
+    },
+    {
+      "path": "src/features/supply-chain/components/HierarchicalViz/HierarchicalViz.tsx",
+      "sha256": "8b50aa735f79423374255890501d4dad3719cb68c32839f44e8513c0cd3dd53b",
+      "excerpt": "evidence/config-and-queries.md",
+      "ranges": [
+        [
+          1878,
+          1978
+        ],
+        [
+          2116,
+          2140
+        ],
+        [
+          2269,
+          2408
+        ],
+        [
+          2416,
+          2468
+        ],
+        [
+          3486,
+          3584
+        ]
+      ]
+    },
+    {
+      "path": "src/features/supply-chain/components/HierarchicalViz/HierarchicalViz.tsx",
+      "sha256": "8b50aa735f79423374255890501d4dad3719cb68c32839f44e8513c0cd3dd53b",
+      "excerpt": "evidence/metrics.md",
+      "ranges": [
+        [
+          4865,
+          4985
+        ],
+        [
+          5030,
+          5060
+        ]
+      ]
+    },
+    {
+      "path": "src/features/supply-chain/components/HierarchicalViz/HierarchicalViz.tsx",
+      "sha256": "8b50aa735f79423374255890501d4dad3719cb68c32839f44e8513c0cd3dd53b",
+      "excerpt": "evidence/analytics.md",
+      "ranges": [
+        [
+          5435,
+          5500
+        ],
+        [
+          6665,
+          6700
+        ]
+      ]
+    },
+    {
+      "path": "src/features/supply-chain/components/HierarchicalViz/HierarchicalViz.tsx",
+      "sha256": "8b50aa735f79423374255890501d4dad3719cb68c32839f44e8513c0cd3dd53b",
+      "excerpt": "evidence/part-labels.md",
+      "ranges": [
+        [
+          2180,
+          2240
+        ],
+        [
+          3585,
+          3680
+        ]
+      ]
+    },
+    {
+      "path": "src/features/supply-chain/config/featureConfig.ts",
+      "sha256": "dcda1980979ba91aa03a60dcce0df22f6a5d00dfe27cdf3dc786806808592e5d",
+      "excerpt": "evidence/feature-routing.md",
+      "ranges": [
+        [
+          44,
+          51
+        ],
+        [
+          65,
+          80
+        ],
+        [
+          114,
+          131
+        ]
+      ]
+    },
+    {
+      "path": "src/config/clientConfig.ts",
+      "sha256": "6435f102fef10b0acecf9f8026bbb634ab00876df32d83224568c68f1935154d",
+      "excerpt": "evidence/client-selection.md",
+      "ranges": [
+        [
+          626,
+          649
+        ]
+      ]
+    },
+    {
+      "path": "src/data/dataModelRegistry.ts",
+      "sha256": "89023a2b9c6c986b44834d0ca1f09a8343ba5ad51da07e0ef7bd8899f035db70",
+      "excerpt": "evidence/registry.md",
+      "ranges": [
+        [
+          1,
+          49
+        ]
+      ]
+    },
+    {
+      "path": "src/index.tsx",
+      "sha256": "35a61d87a60df99f9af0666bd3998c743f97bca5ac562b78b02561cd030eb876",
+      "excerpt": "evidence/react-provider.md",
+      "ranges": [
+        [
+          1,
+          33
+        ]
+      ]
+    },
+    {
+      "path": "src/client-configs/ng_subtier_demo.json",
+      "sha256": "26d12d1645803a925c488ed5bd64d5e030915850ee18e9ee2f36de105ebb38e2"
+    },
+    {
+      "path": "src/ng-subtier_demo.ts",
+      "sha256": "2677feb2b40c0851accbd9da53d5495597443f9b4f1539d9f5d282e49769f0a7"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a99d28609975944f7bfa45591a6e8ba01991207ec50326dc721f619dfe45d8f7"
+    },
+    {
+      "path": "docs/skills/sisense-ogma/SKILL.md",
+      "sha256": "e0483b47f38c598fabdbcd323b8fe15d7501deca82625e6a89f7851940bc3b63",
+      "excerpt": "evidence/ogma-guidance.md",
+      "ranges": [
+        [
+          31,
+          38
+        ]
+      ]
+    }
+  ]
+}
